@@ -2,7 +2,7 @@
 # Property Title Token Project
 ### Udacity Blockchain Capstone
 
-### How to run this project  
+## How to run this project?    
 
 **Install all project dependencies**  
 Run npm install  
