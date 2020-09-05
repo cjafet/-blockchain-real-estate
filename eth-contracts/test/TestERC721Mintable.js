@@ -13,7 +13,7 @@ contract('TestERC721Mintable', accounts => {
 
 
     describe('match erc721 spec', function () {
-        beforeEach(async function () { 
+        before(async function () { 
             this.contract = await ERC721MintableComplete.new({from: account_one});
 
             // TODO: mint multiple tokens
@@ -58,16 +58,6 @@ contract('TestERC721Mintable', accounts => {
 
             assert.equal(balance6.toString(), "3", "Should have 3 tokens now");
             assert.equal(new_owner, account_six, "Should return new token owner");
-
-        })
-
-        it('should fail transfer token if not token owner', async function () { 
-            // await this.contract.safeTransferFrom(testAddresses[3], testAddresses[4], 4, {from: testAddresses[3]});
-
-            // let balance4 = await this.contract.balanceOf(testAddresses[4]);
-            // console.log("Balance4 is: ", balance4);
-
-            // assert.equal(balance4.toString(), "3", "Should have 3 tokens now");
 
         })
 
