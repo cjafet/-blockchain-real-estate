@@ -36,7 +36,8 @@ zokrates/output_files/zokrates/inc_proof.json
 **Contract address:** 0x0F275cac37a081F6B33a7cFa7cCa0cC05E7512e3
 https://rinkeby.etherscan.io/address/0x0F275cac37a081F6B33a7cFa7cCa0cC05E7512e3
 
-### Generate OpenSea marketplace https://rinkeby.opensea.io/assets/property-title-token
+### Generate OpenSea marketplace   
+https://rinkeby.opensea.io/assets/property-title-token
 
 ### Purchase those 5 tokens using a different address
 
