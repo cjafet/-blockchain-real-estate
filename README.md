@@ -2,6 +2,28 @@
 # Property Title Token Project
 ### Udacity Blockchain Capstone
 
+### How to run this project  
+
+**Install all project dependencies**  
+Run npm install  
+
+**Compile all contracts**  
+Run truffle compile  
+
+**Run all tests**  
+truffle test  
+
+**Run a test for a specific contract**  
+truffle test test/TestERC721Mintable.js  
+
+**Package versions**  
+
+Truffle v5.1.27 (core: 5.1.27)  
+Solidity v0.5.16 (solc-js)  
+Node v10.15.2  
+Web3.js v1.2.1  
+
+
 ### Zokrates proof used in contract tests 
 **Validy proofs**   
 zokrates/output_files/zokrates/proof.json   

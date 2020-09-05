@@ -50,20 +50,14 @@ contract('TestERC721Mintable', accounts => {
         })
 
         it('should transfer token from one owner to another', async function () { 
-
-            //console.log("isApproved",await this.contract._isApprovedOrOwner(testAddresses[3],4));
-
-            let owner = await this.contract.owner();
-             
+  
             await this.contract.transferFrom(account_five, account_six, 4, {from: account_five});
-            //console.log(account_five);
 
-            //console.log(await this.contract.ownerOf(4));
-
+            let new_owner = await this.contract.ownerOf(4);
             let balance6 = await this.contract.balanceOf(account_six);
-            //console.log("Balance6 is: ", balance6);
 
             assert.equal(balance6.toString(), "3", "Should have 3 tokens now");
+            assert.equal(new_owner, account_six, "Should return new token owner");
 
         })
 
