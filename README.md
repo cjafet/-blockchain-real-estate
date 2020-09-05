@@ -8,16 +8,16 @@
 Run npm install  
 
 **Compile all contracts**  
-Run truffle compile  
+cd eth-contracts && truffle compile  
 
 **Run all tests**  
-truffle test  
+cd eth-contracts && truffle test    
 
 **Run a test for a specific contract**  
-truffle test test/TestERC721Mintable.js  
+cd eth-contracts && truffle test test/TestERC721Mintable.js    
 
-**Package versions**  
 
+**Package versions**    
 Truffle v5.1.27 (core: 5.1.27)  
 Solidity v0.5.16 (solc-js)  
 Node v10.15.2  
